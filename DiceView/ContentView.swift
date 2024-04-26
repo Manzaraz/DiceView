@@ -16,7 +16,9 @@ struct ContentView: View {
                 .resizable()
                 .frame(width: 100, height: 100)
                 
-          
+            Button("Roll") {
+                numberOfPips = Int.random(in: 1...6)
+            }
         }
         .padding()
     }
